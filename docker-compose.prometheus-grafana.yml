@@ -26,6 +26,7 @@ services:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=grafana
       - GF_SERVER_ROOT_URL=http://34.94.88.203/grafana/
+      - GF_SERVER_SERVE_FROM_SUB_PATH=true
     volumes:
       - ./grafana:/etc/grafana/provisioning/datasources
 volumes:
